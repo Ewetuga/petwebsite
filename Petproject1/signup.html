@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+            <!--register-->
+            <div class="details">
+<form action="index.php" method="post">
+   
+        <div class="b"><img src="images/logo.png" alt="logo-image"></div>
+    <div class="reg">
+    <h2>Welcome to PETBASE</h2>
+    
+    <h2>Sign Up</h2>
+    <h3>Create Your account to get started.</h3>
+    <div class="e">
+    <label for="email">Email Address:</label> <br>
+    <input type="email" name="email" id="email" placeholder="tp@gmail.com" required>
+    </div>
+    
+    <div class="e">
+    <label for="usernames">Username:</label><br>
+    <input type="text" name="usernames" id="usernames" placeholder="timmy" required>
+    </div>
+    
+    <div class="eb">
+       <p>Type of User:</p>
+       
+    <div class="t">
+        <input type="radio" name="user" id="vet">
+        <label for="vet">Vet Doctor</label>
+    </div>
+       
+    <div class="t">
+        <input type="radio" name="user" id="shopper">
+        <label for="shopper">Shopper</label>
+    </div>
+      
+    <div class="t">
+        <input type="radio" name="user" id="seller">
+        <label for="seller">Seller</label>
+    </div>
+
+    </div>
+    <!--for document upload-->
+    <div class="upload" id="uploads">
+<label for="certificate">Please upload your Certificate:</label>
+<input type="file" name="certificate" id="certificate" type=".pdf">
+    </div>
+    <!--end of document upload-->
+    <div class="e">
+    <label for="pass">Password:</label><br>
+    <input type="password" name="pass" id="pass" required>
+    </div>
+    
+    <div class="e">
+    <label for="pass1">Reconfirm  Password:</label><br>
+    <input type="password" name="pass1" id="pass1" required>
+    </div>
+    <button type="submit" id="register">Register</button>
+    </div>
+
+    <div class="acc">Already have an account? <a href="login.html">Login</a></div>
+    <!--end of register-->
+</form>
+</div>
+<script>
+//to select the type of document submitted
+const typeEl = document.getElementById("vet");
+const sellerEl = document.getElementById("seller");
+const shopperEl = document.getElementById("shopper");
+const uploadEl = document.getElementById("uploads");
+
+typeEl.addEventListener("change",()=>{
+if (typeEl.checked) {
+    uploadEl.classList.add("show");
+    // console.log("hello");
+    
+}
+   
+});
+
+shopperEl.addEventListener("change",()=>{
+    if (shopperEl.checked) {
+        uploadEl.classList.remove("show");
+    }
+})
+
+sellerEl.addEventListener("change",()=>{
+    if (sellerEl.checked) {
+       uploadEl.classList.remove("show");
+    //    console.log("yellow"); 
+    }
+})
+
+
+//password verification
+const passEl = document.getElementById("pass");
+const passEl1 = document.getElementById("pass1");
+const registeredButton = document.getElementById("register");
+
+registeredButton.addEventListener("click",()=>{
+    if (passEl.value !== passEl1.value) {
+        alert("passwords do not match");
+        event.preventDefault();
+    }
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website that displays all aspect of having a pet">
+    <meta name="keywords" content="pet, vet Vet-Doctors, dogs.">
+    <meta name="author" content="petbase">
+    <title>www.petbase.com</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+
+        <div class="profile">
+<img src="images/profile.png" alt="profile-image">
+        </div>
+
+<!--hamburger menu-->
+<div class="ham" id="hams">
+<div class="ham1"></div>
+<div class="ham1"></div>
+<div class="ham1"></div>
+</div>
+<!--end of hamburger menu-->
+
+
+
+        <nav>
+<ul class="menu-links" id="menu-display">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#service">Services</a></li>
+    <li><a href="#foot">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li class="cart" id="cart"><img src="images/shoppingcart.png" alt="search-icon" ></li>
+    <li class="shop"><a href="#product">Shop Now</a></li>
+</ul>
+        </nav>
+
+    </header>
+    <!--end of header-->
+    <div class="show-cart" id="cart-display">
+        <h2>Your Shopping list here</h2>
+        <img src="images/shoppingcart.png" alt="shoppingcart" style="width: 8rem;height: 4rem;">
+        <div class="items-bought" id="purchased">
+            <div id="cart-total">Total :0 NGN</div>
+    <button id="checkout-btn">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <!--main-->
+<div class="main" id="home">
+<!--about-->
+<div class="about" >
+
+    <h2>Get Your <span class="d"><img src="images/dog1.png" alt="dogimage"></span>
+    New Furry Family Member Today
+    </h2>
+
+    <p>Discover the joy of pet adoption and change a life.Own your pets today.
+    </p>
+    <p>It's a fascinating way to build bonds with your pet always.</p>
+
+    <div class="btn">
+<button> <a href="#product">Shop Now</a></button>
+<button> &#9742; Schedule a call</button>
+    </div>
+</div>
+<!--end of about-->
+
+<!--about-img-->
+<div class="about-img">
+<img src="images/dog.png" alt="dog-image">
+</div>
+<!--end of about-img-->
+
+</div>
+    <!--end of main-->
+
+
+    <!--numbs-->
+
+    <div class="numbs">
+
+        <div class="award">
+            <h2>85+</h2>
+            <p>Awards</p>
+        </div>
+
+        <div class="clients">
+            <h2>95+</h2>
+            <p>Clients</p>
+        </div>
+
+        <div class="employ">
+            <h2>60+</h2>
+            <p>Employees</p>
+        </div>
+
+        <div class="production">
+            <h2>99%</h2>
+            <p>Production</p>
+        </div>
+
+    </div>
+    <!--end of numbs-->
+
+
+
+    <!--shop-->
+    <div class="shop">
+
+        <div class="one">
+            <!-- <button>Shop Now &rarr;</button> -->
+<img src="images/dog3.png" alt="dog-image" >
+        </div>
+
+<div class="two">
+
+    <div class="first">
+        <!-- <button>Shop Now &rarr;</button> -->
+        <div class="b">
+        <img src="images/cat.png" alt="cat-image">
+    </div></div>
+
+    <div class="second">
+        <!-- <button>Shop Now &rarr;</button> -->
+        <div class="b">
+        <img src="images/cat2.png" alt="cat-image">
+    </div></div>
+</div>
+
+
+
+
+    </div>
+    <!--end of shop-->
+
+<!--start of making-->
+    <div class="making">
+        <div class="text-container">
+        <h3>MAKING PETS & PEOPLE BEST BUDS</h3>
+        <h3>MAKING PETS & PEOPLE BEST BUDS</h3>
+        <h3>MAKING PETS & PEOPLE BEST BUDS</h3>
+        <h3>MAKING PETS & PEOPLE BEST BUDS</h3>
+        <h3>MAKING PETS & PEOPLE BEST BUDS</h3>
+    </div>
+    </div>
+    <!--end of making-->
+
+<!--adopt-->
+
+<!--button filters-->
+<!--waiting-->
+<div class="waiting" id="product">
+<h3>Puppies Waiting For Adoption</h3>
+<!--content-->
+<div class="content">
+
+<ul class="filter-buttons">
+    <li ><button class="active">All</button></li>
+<li><button>Dogs</button></li>
+<li><button>Cats</button></li>
+<li><button >Vet-Doctors</button></li>
+</ul>
+
+
+</div>
+<!--end of content-->
+</div>
+<!--end of waiting-->
+
+<!--image display-->
+<div class="products">
+
+    <div class="p">
+    <ul data-name="cats">
+        <li><img src="images/adoptcat1.jpg" loading="lazy" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span>50,000</span></h4>
+        <div class="quantity">
+        <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+      <button class="decrease">-</button>
+        </div>
+
+    </ul>
+
+
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog1.jpg" loading="lazy" alt="dog"></li>
+        <h3>Yorkshire Terrier</h3>
+        <h4>Color:Gray and white</h4>
+        <h4 class="price">Price: NGN<span>450,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+
+
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog2.jpg" loading="lazy" alt="catpet"></li>
+        <h3>Shiba Inu</h3>
+        <h4>Color:brown</h4>
+        <h4 class="price">Price: NGN <span>750,000</span></h4>
+        <div class="quantity">
+            <h5>Quantity:<span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+    </div>
+
+    <div class="p">
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog3.jpg" loading="lazy" alt="catpet"></li>
+        <h3>Cavalier King</h3>
+        <h4>Color:white,brown and black</h4>
+        <h4 class="price">Price: NGN <span>500,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+       
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+    <ul data-name="cats">
+        <li><img src="images/adoptcat2.jpg" loading="lazy" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span>250,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+
+    <ul data-name="cats">
+        <li><img src="images/adoptcat6.jpg" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span>50,000</span></h4>
+    
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+    </div>
+
+    <div class="p">
+    <ul data-name="cats">
+        <li><img src="images/adoptcat5.jpg" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span>230,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog5.jpg" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span>50,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog6.jpg" alt="catpet"></li>
+        <h3>Trem Cat</h3>
+        <h4>Color:white</h4>
+        <h4 class="price">Price: NGN <span> 350,000</span></h4>
+       
+        <div class="quantity">
+            <h5>Quantity :<span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+    </div>
+
+    <div class="p">
+
+    <ul data-name="dogs">
+        <li><img src="images/adoptdog4.jpg" alt="catpet"></li>
+        <h3>Siberian Husky</h3>
+        <h4>Color:white and blue</h4>
+        <h4 class="price">Price: NGN <span>950,000</span></h4>
+        
+        <div class="quantity">
+            <h5>Quantity: <span>1</span></h5>
+        <button class="increase">+</button> 
+        <button class="decrease">-</button>
+        </div>
+    </ul>
+
+
+
+    <ul data-name="vet-doctors">
+        <li><img src="images/medical-students-8765276_1280.jpg" alt="catpet"></li>
+        <h3>Vet Mary</h3>
+        <h4>Price: NGN 5,000 per Hour</h4>
+        <button>Chat Me Up</button>
+       
+    </ul>
+
+    <ul data-name="vet-doctors">
+        <li><img src="images/woman-6018388_1280.jpg" alt="catpet"></li>
+        <h3>Vet Mary</h3>
+        <h4>Price: NGN 5,000 per Hour</h4>
+        <button>Chat Me Up</button>
+       
+    </ul>
+
+    </div>
+
+</div>
+<!--end of image display-->
+
+<!--end of button filters-->
+
+<!--end of adopt-->
+
+<!--write-->
+<div class="write" id="about">
+    <div class="up">
+        <h2>Working for <span class="d"><img src="images/dog1.png" alt="dogimage"></span> Dog Breeder Free, Happy Time</h2>
+
+        <p>The best overall dog DNA set to embark breed & health , while promoting stability and information.</p>
+
+        <p>petbase offers exclusive insights to the pet world, offering exceptional services and values to the pets along side their Adoptors.</p>
+
+        <button>Read More</button>
+    </div>
+
+    <div class="ball"></div>
+    <div class="balls"></div>
+        <div class="ups">
+            <img src="images/second.png" alt="dog-image" >
+        </div>
+    
+</div>
+<!--end of write-->
+
+
+
+<!--blogs-->
+<h2 class="recent" id="service">Our Recent Blogs</h2>
+<div class="blogs">
+
+<div class="blog1">
+    <img src="images/blog1.jpg" alt="blog-img">
+    <h5>puppy show</h5>
+    <h2>Keep your puppies safe always</h2>
+    <p>A daily activity with your pets, increases the bond with your pets</p>
+
+</div>
+
+<div class="blog2">
+    <img src="images/blog2.jpg" alt="blog-img">
+    <h5>Cat talk show</h5>
+    <h2>Keep your pets comfottable always</h2>
+    <p>Watching a pet show, adventure and activity, makes your pet healthy.</p>
+
+</div>
+
+
+<div class="blog3">
+    <img src="images/blog3.jpg" alt="blog-img">
+    <h5> keep up</h5>
+    <h2>Online Pet , Everything Your Pet</h2>
+    <p>A daily activity with your pets, increases the bond with your pets</p>
+
+</div>
+
+
+</div>
+<!--end of blogs-->
+
+
+
+<!--footer-->
+<!-- <div class="top"><img src="images/wave.png" alt="wave-img"></div> -->
+
+<footer id="foot">
+    <!--f1-->
+  <div class="f1">
+<img src="images/logo.png" alt="image-logo">
+<h4>The best overall pet website , where people from different countries, interact and delive great exceptional pet and services.</h4>
+<div class="socials">
+    <span><img src="images/instagram.256x256.png" alt="instagram"></span>
+    <span><img src="images/twitter.png" alt="instagram"></span>
+    <span><img src="images/linkedin.png" alt="instagram"></span>
+    <span><img src="images/github.png" alt="instagram"></span>
+</div>
+
+  </div>
+<!--end of f1-->
+
+<!--f2-->
+<div class="ff">
+<div class="f2">
+<h3>Our Policies</h3>
+<ul>
+    <li>About us</li>
+    <li>Careers</li>
+    <li>Blog</li>
+    <li>Tutorial</li>
+    <li>Pricing</li>
+</ul>
+</div>
+<!--end of f2-->
+
+
+<!--f3-->
+<div class="f3">
+    <h3>Our Policies</h3>
+    <ul>
+        <li>Contact</li>
+        <li>Create Proposal</li>
+        <li>Conduct</li>
+        <li>Research</li>
+        <li>Explore</li>
+    </ul>
+</div>
+    
+    <!--end of f3-->
+</div>
+<!--end of ff-->
+
+    <!--f4-->
+    <div class="f4">
+
+        <div class="f4-one">
+            <img src="images/adoptcat1.jpg" alt="cat-image">
+            <img src="images/adoptcat2.jpg" alt="cat-image" >
+            <img src="images/adoptcat5.jpg" alt="cat-image">
+        </div>
+
+        <div class="f4-two">
+<img src="images/adoptdog1.jpg" alt="dog-image" >
+<img src="images/adoptdog2.jpg" alt="dog-image" >
+<img src="images/adoptdog3.jpg" alt="dog-image" >
+        </div>
+
+    </div>
+    <!--end of f4-->
+</footer>
+<!--end of footer-->
+<script src="index.js"></script>
+</body>
+</html>

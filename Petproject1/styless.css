@@ -1,0 +1,1580 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/*header*/
+header{
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    width: 85rem;
+    height: 5rem;
+    position: fixed;
+    backdrop-filter: blur(5rem);
+    z-index: 999;
+}
+
+header .profile{
+    width:10rem ;
+    height: 4rem;
+    background: lavender;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 11rem;
+}
+
+header .profile img{
+    width: 10rem;
+    height: 5rem;
+}
+
+header .ham{
+    width: 4rem;
+    height: 3rem;
+    display: none; 
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+    background: #d8bfd8;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    gap: 0;
+    transition: all 0.3s ease-in-out;
+}
+header .ham .ham1{
+    height: .7rem;
+    margin-top: 0.3rem;
+    width: 4rem;
+    background-color: black;
+    border-radius: .6rem;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav ul li{
+    list-style: none;
+    display: flex;
+    margin: 2rem;
+    padding: 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+header nav ul img{
+    width: 3rem;
+    height: 2rem;
+    
+}
+
+header nav ul .shop{
+    border: 2px solid purple;
+   padding: .6rem;
+   border-radius: 2rem;
+   width: 9rem;
+   height: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.show-cart{
+    display: none; /* Change from 'display: none' to 'display: flex' */
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    background: white;
+    
+}
+
+.carts{
+    display: block;
+    padding-top: 6rem;
+    box-shadow: 3px 5px 8px black;
+    padding-bottom: .6rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+}
+
+.addtocart{
+    margin-top: .5rem;
+}
+.addtocart:hover{
+    background: lightblue;
+}
+.show-cart img{
+    width: 8rem;
+height: 0.4rem;
+}
+
+.cart-item{
+    border-bottom: 1px solid #ddd;
+    padding-left: 1.3rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#checkout-btn{
+    width: 15rem;
+    text-align: center;
+    border-radius: .6rem;
+    padding: .4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#checkout-btn:hover{
+    background-color: #45a049;
+    cursor: pointer;
+}
+/*main*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 85rem;
+    height: 37rem;
+    padding: 2rem;
+    padding-top: 7rem;
+}
+
+.main .about{
+    line-height: 3rem;
+    width: 25rem;
+}
+.main .about h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.main .about span{
+    background: lemonchiffon;
+    height: 12rem;
+    border-radius: 2rem;
+}
+.main .about span img{
+    width: 6rem;
+    height: 4rem;
+}
+
+.main .about .btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.main .about .btn a:hover{
+    color: white;
+    cursor: pointer;
+}
+.main .about .btn button{
+    width: 10rem;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+    color: black;
+    transition: color 2s ease-in,background-color 2s ease-in;
+}
+.main .about p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.main .about .btn button:hover{
+color: white;
+background-color: purple;
+cursor: pointer;
+}
+
+
+
+.main .about-img{
+    background: lavender;
+    width: 40rem;
+    height: 20rem;
+    border-bottom-right-radius: 17rem;
+    border-top-left-radius: 27rem;
+    
+}
+.main .about-img img{
+    width: 30rem;
+    height: 30rem;
+}
+
+
+.numbs{
+    width: 85rem;
+    height: 6rem;
+    display: flex;
+    background: lavender;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbs h2{
+    color: #002d62;
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.numbs p{
+    color:lightslategray;
+}
+
+/*shop*/
+.shop{
+    display: flex;
+    width: 85rem;
+    height: 40rem;
+    padding: 2rem;
+
+}
+
+.shop .one{
+    background: #d8bfd8;
+    border-radius: .7rem;
+    padding: 1rem;
+}
+
+.shop .one img{
+    width: 20rem;
+    height: 30rem;
+}
+
+.shop .two{
+    width: 37rem;
+    height: 10rem;
+    margin-left: 11rem;
+}
+.shop .two .first{
+    margin-bottom: 3rem;
+    background: #d8bfd8;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+
+.shop .two .second{
+    background: #d8bfd8;
+    padding: 1rem;
+    border-radius: .7rem;
+
+}
+
+
+.shop .two img{
+    width: 15rem;
+    height: 12rem;
+}
+.shop .b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop button{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    padding: 1rem;
+    border-radius: .6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/*making*/
+.making{
+    background: #00308f;
+    color: white;
+    height: 4rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 1.3rem;
+    width: 85rem;
+    margin-left: 0;
+    position: relative;
+    overflow: hidden;
+}
+.making .text-container{
+display: flex;
+gap: 2rem;
+white-space: nowrap;
+animation: scrollText 20s linear infinite;
+}
+.making  h3{
+   font-size: 1.3rem;
+}
+
+@keyframes scrollText {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/*adopt*/
+.waiting h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002d62;
+    font-size: 1.7rem;
+
+}
+
+.waiting .content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 1.4rem 0;
+}
+
+.waiting .content ul button{
+width: 7rem;
+padding: 0.6rem;
+border: none;
+border-radius: .4rem;
+box-shadow: 0px 2px 4px black;
+cursor: pointer;
+transition: width ease-in-out 0.5s,box-shadow ease-in-out 0.5s;
+}
+
+.waiting .content ul button:hover{
+    width: 8rem;
+    box-shadow: 2px 4px 6px black;
+    
+    }
+
+    .active{
+        background: blue;
+        color: aliceblue;
+    }
+/*products*/
+    .products{
+       width: 85rem;
+       line-height: 1.5rem;
+    }
+
+    .products ul {
+        list-style: none;
+        border: 2px solid gray;
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+    .products ul li img{
+        width: 13rem;
+        height: 11rem;
+        border-radius: .5rem;
+    }
+
+    .products ul button{
+        width: 6rem;
+        height: 2rem;
+        padding: .5rem;
+        border: none;
+        font-weight: bolder;
+        border-radius: .5rem;
+    }
+
+    .products .p{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .products  button:hover{
+        background: lightblue;
+        cursor: pointer;
+    }
+
+    /*write*/
+
+    .write{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2rem;
+        background-color: lightgrey;
+        height: 30rem;
+        width: 85rem;
+        position: relative;
+    }
+
+    .write .up{
+        width: 25rem;
+        height: 40rem;
+        line-height: 4rem;
+    }
+
+    .write .up h2{
+        font-size: 2rem;
+        color: #00308f;
+    }
+
+    .write .up p{
+        width: 35rem;
+        line-height: 2.5rem;
+        font-size: 1.2rem;
+    }
+.write .up span{
+    background: #00308f;
+    width: 8rem;
+    height: 9rem;
+    border-radius: .6rem;
+}
+
+
+    .write .up span img{
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .write .up button{
+        border: 2px solid purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9rem;
+        padding: 1rem;
+        border-radius:2rem;
+        color: purple;
+        background: none;
+        font-weight: bolder;
+    }
+
+    .write .ball{
+        position: relative;
+        background: white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        left: 40rem;
+        top: .3rem;
+        box-shadow: 3px 5px 8px black;
+    }
+
+    .write .balls{
+        position: relative;
+        background: white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        right: 40rem;
+        top: 23rem;
+        box-shadow: 3px 5px 8px black;
+    }
+    
+    
+.write .ups{
+    width: 35rem;
+    height: 31rem;
+}
+    .write .ups img{
+        width: 30rem;
+        height: 29rem;
+    }
+
+
+
+    /*blog*/
+
+    .recent{
+        font-size: 2.1rem;
+        color: #00308f;
+        padding: 2rem;
+    }
+    .blogs{
+        display: flex;
+        width: 85rem;
+        padding: 2.5rem;
+        justify-content: space-around;
+    }
+
+    .blogs img{
+        width: 25rem;
+        height: 20rem;
+        border-radius: .6rem;
+    }
+
+    .blogs h5{
+        color: purple;
+    }
+.blogs p{
+    font-size: 1.2rem;
+}
+    .blogs h2{
+        color: #00308f;
+    }
+
+    .blogs .blog1{
+        width: 25rem;
+        line-height: 2rem;
+    }
+
+    .blogs .blog2{
+        width: 25rem;
+        line-height: 2rem;
+    }
+
+    .blogs .blog3{
+        width: 25rem;
+        line-height: 2rem;
+    }
+
+
+    /*footer*/
+    .top img{
+        width: 15rem;
+    }
+
+    footer{
+        width: 85rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 2.5rem;
+        background: #d8bfd8;
+        line-height: 1.6rem;
+    }
+
+    footer h3{
+        color: #00308f;
+        line-height: 2rem;
+    }
+footer .f1{
+    width: 20rem;
+}
+
+    footer .f1 img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+footer .f1 h4{
+    margin-bottom: 2rem;
+}
+    footer .socials span img{
+        width: 2rem;
+        height: 2rem;
+    }
+footer .ff{
+    display: flex;
+}
+    footer .f2 ul{
+        list-style: none;
+    }
+
+    footer .f3 ul{
+        list-style: none;
+    }
+    footer .f4 .f4-one img{
+        width: 12rem;
+        height: 5rem;
+        border-radius: .6rem;
+    }
+
+    footer .f4 .f4-two img{
+        width: 12rem;
+        height: 5rem;
+        border-radius: .6rem;
+    }
+
+
+    /*responsiveness*/
+    @media screen  and (max-width:480px){
+/* *{
+    outline: 2px solid purple;
+} */
+
+        header{
+            width: 23.44rem;
+            position: fixed;
+        }
+
+        header .profile{
+            width:5rem ;
+            height: 2rem;
+            background: lavender;
+    
+        }
+        
+        header .profile img{
+            width: 5rem;
+            height: 2rem;
+        }
+        header .ham{
+            display: block; 
+            margin-left: 9rem;
+        }
+
+        header nav ul{
+            display: none;
+        }
+
+        
+/*main*/
+.main{
+    flex-direction: column;
+    width: 21rem;
+    height: 50rem;
+    padding: 0.5rem;
+    padding-top: 7rem;
+}
+
+.main .about{
+    line-height: 3rem;
+    width: 19rem;
+    
+}
+
+.main .about h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.main .about span{
+    height: 8rem;
+    border-radius: 2rem;
+}
+.main .about span img{
+    width: 4rem;
+    height: 3rem;
+}
+
+
+.main .about-img{
+    background: lavender;
+    width: 15rem;
+    height: 10rem;
+    border-bottom-right-radius: 7rem;
+    border-top-left-radius: 9rem;
+    
+}
+.main .about-img img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.numbs{
+    width: 23.44rem;
+    height: 4rem;
+}
+
+.numbs h2{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+
+
+
+/*shop*/
+.shop{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20rem;
+    height: 25rem;
+    padding: 2rem;
+
+}
+
+
+.shop .one{
+    padding: 0.6rem;
+    width: 11rem;
+}
+
+.shop .one img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.shop .two{
+    width: 17rem;
+    height: 10rem;
+    margin-left: 1.5rem;
+}
+.shop .two .first{
+    margin-bottom: 3rem;
+    background: #d8bfd8;
+    width: 11rem;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+
+.shop .two .second{
+    display: none;
+}
+
+/*making*/
+.making{
+    width: 23.44rem;
+}
+
+/*adopt*/
+.waiting{
+    width: 19rem;
+}
+.waiting h3{
+ font-size: 1.2rem;
+
+}
+
+.waiting .content ul {
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1.4rem 0;
+    width: 21rem;
+}
+
+.waiting .content ul button{
+    width: 4.5rem;
+    padding: 0.3rem;
+    }
+
+/*product*/
+    .products{
+        width: 20rem;
+        /* background-color: yellow; */
+        line-height: 1.5rem;
+     }
+
+     .products ul {
+        list-style: none;
+        border: 2px solid gray;
+        margin: 2rem 0;
+        padding: 1rem;
+        width: 11rem;
+    }
+    .products ul li img{
+        width: 9rem;
+        height: 6rem;
+        border-radius: .5rem;
+    }
+
+    .products ul button{
+        width: 5.3rem;
+        height: 2rem;
+        padding: .5rem;
+        border: none;
+        font-weight: bolder;
+        border-radius: .5rem;
+        white-space: nowrap;
+    }
+
+    .products .p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .products  button:hover{
+        background: lightblue;
+        cursor: pointer;
+    }
+
+    
+    /*write*/
+
+    .write{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 2rem;
+        background-color: lightgrey;
+        height: 40rem;
+        width: 23.44rem;
+        position: relative;
+    }
+
+    .write .up{
+        width: 15rem;
+        height: 10rem;
+        line-height: 2rem;
+    }
+
+    .write .up h2{
+        font-size: 1.3rem;
+        color: #00308f;
+    }
+
+    .write .up p{
+        width: 19rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+.write .up span{
+    background: #00308f;
+    width: 8rem;
+    height: 9rem;
+    border-radius: .6rem;
+}
+
+.write .ball{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    left: 17rem;
+
+}
+
+.write .balls{
+
+    display: none;
+}
+
+
+.write .ups{
+    margin-top:12rem;
+    width: 18rem;
+    height: 21rem;
+}
+    .write .ups img{
+        width: 15rem;
+        height: 12rem;
+    }
+
+    /*blogs*/
+
+    .recent{
+        width: 18rem;
+        font-size: 1.13rem;
+    }
+    .blogs{
+        flex-direction: column;
+        width: 19rem;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    .blogs img{
+        width: 15rem;
+        height: 10rem;
+        border-radius: .6rem;
+    }
+
+    .blogs .blog1{
+        width: 17rem;
+        line-height: 2rem;
+    }
+
+    .blogs .blog2{
+        width: 17rem;
+        line-height: 2rem;
+    }
+
+    .blogs .blog3{
+        width: 17rem;
+        line-height: 2rem;
+    }
+
+    /*footer*/
+    footer{
+        width: 23.44rem;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 2.5rem;
+        background: #d8bfd8;
+        line-height: 1.6rem;
+    }
+footer .ff{
+    display: flex;
+}
+
+
+footer .f4 .f4-one img{
+    width: 4rem;
+    height: 5rem;
+    border-radius: .6rem;
+}
+
+footer .f4 .f4-two img{
+    width: 4rem;
+    height: 5rem;
+    border-radius: .6rem;
+}
+    }
+
+
+
+
+    @media screen and (max-width:768px){
+     
+        header{
+            width: 47.7rem;
+        
+            
+        }
+
+        header .profile{
+            width:5rem ;
+            height: 2rem;
+
+    
+        }
+        
+        header .profile img{
+            width: 5rem;
+            height: 2rem;
+        }
+        header .ham{
+            display: block; 
+            margin-left: 24rem;
+        }
+
+        header nav ul{
+            display: none;
+        }
+
+
+        /*main*/
+.main{
+    flex-direction: column;
+    width: 40rem;
+    height: 40rem;
+    padding: 0.5rem;
+    padding-top: 7rem;
+
+}
+
+.main .about{
+    line-height: 3rem;
+    width: 33rem;
+    font-size: 1.3rem;
+    
+}
+
+.main .about h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.main .about span{
+    height: 8rem;
+    border-radius: 2rem;
+}
+.main .about span img{
+    width: 4rem;
+    height: 3rem;
+}
+
+
+.main .about-img{
+    background: lavender;
+    width: 19rem;
+    height: 17rem;
+    border-bottom-right-radius: 7rem;
+    border-top-left-radius: 9rem;
+    
+}
+.main .about-img img{
+    width: 16rem;
+    height: 15rem;
+}
+
+.numbs{
+    margin-top: 1rem;
+    width:47.99rem;
+    height: 4rem;
+}
+
+.numbs h2{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+
+
+/*shop*/
+.shop{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40rem;
+    height: 25rem;
+    padding: 2rem;
+
+}
+
+
+.shop .one{
+    padding: 0.6rem;
+    width: 30rem;
+    height: 13rem;
+}
+
+.shop .one img{
+    width: 25rem;
+    height: 13rem;
+}
+
+.shop .two{
+    width: 17rem;
+    height: 7rem;
+    margin-left: 1.5rem;
+}
+.shop .two .first{
+    margin-bottom: 3rem;
+    background: #d8bfd8;
+    width: 11rem;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+
+.shop .two .second{
+    display: none;
+}
+
+/*making*/
+.making{
+    width: 47.9rem;
+
+}
+
+/*product*/
+.products{
+    width: 47rem;
+    /* background-color: yellow; */
+    line-height: 1.5rem;
+ }
+
+ .products ul {
+    list-style: none;
+    border: 2px solid gray;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 14rem;
+}
+.products ul li img{
+    width: 11rem;
+    height: 6rem;
+    border-radius: .5rem;
+}
+
+.products ul button{
+    width: 5.3rem;
+    height: 2rem;
+    padding: .5rem;
+    border: none;
+    font-weight: bolder;
+    border-radius: .5rem;
+    white-space: nowrap;
+}
+
+.products .p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.products  button:hover{
+    background: lightblue;
+    cursor: pointer;
+}
+
+   /*write*/
+
+   .write{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-around; */
+    padding-left: 2rem;
+    background-color: lightgrey;
+    height: 30rem;
+    width: 47.9rem;
+    position: relative;
+    outline: 2px solid purple;
+}
+
+.write .up{
+    width: 15rem;
+    height: 10rem;
+    line-height: 2rem;
+}
+
+.write .up h2{
+    font-size: 1.3rem;
+    color: #00308f;
+}
+
+.write .up span{
+background: #00308f;
+width: 8rem;
+height: 9rem;
+border-radius: .6rem;
+}
+
+.write .ball{
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 100%;
+left: 17rem;
+
+}
+
+/* .write .balls{
+
+display: ;
+} */
+
+
+.write .ups{
+margin-top:12rem;
+width: 18rem;
+height: 21rem;
+}
+.write .ups img{
+    width: 19rem;
+    height: 15rem;
+}
+
+
+    /*blogs*/
+
+    .recent{
+        width: 18rem;
+        font-size: 1.13rem;
+    }
+    .blogs{
+        flex-direction: column;
+        width: 45rem;
+        padding: 2rem;
+        justify-content: space-around;
+        font-size: 1.7rem;
+    }
+
+    .blogs img{
+        width: 40rem;
+        height: 15rem;
+        border-radius: .6rem;
+    }
+
+    .blogs .blog1{
+        width: 43rem;
+        line-height: 3rem;
+    }
+
+    .blogs .blog2{
+        width: 43rem;
+        line-height: 3rem;
+    }
+
+    .blogs .blog3{
+        width: 43rem;
+        line-height: 3rem;
+    }
+
+    /*footer*/
+    footer{
+        width: 47.95rem;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        /* align-items: center; */
+        padding: 2rem 0;
+        background: #d8bfd8;
+        line-height: 1.6rem;
+    }
+footer .ff{
+    display: flex;
+}
+
+
+footer .f4 .f4-one img{
+    width: 13rem;
+    height: 5rem;
+    border-radius: .6rem;
+}
+
+footer .f4 .f4-two img{
+    width: 4rem;
+    height: 5rem;
+    border-radius: .6rem;
+}
+
+    }
+
+
+    @media screen and (max-width:834px) {
+
+
+        /*header*/
+        header{
+            width: 50rem;
+        }
+        header .ham{
+            display: block; 
+            margin-left: 21rem;
+            font-size: 2rem;
+        }
+
+        header nav ul{
+            display: none;
+        }
+
+
+                /*main*/
+.main{
+    width: 50rem;
+}
+
+.main .about{
+    width: 25rem;
+    height: 30rem;
+  
+}
+
+.main .about h2{
+    font-size: 1.7rem;
+} 
+
+.main .about-img{
+    width: 25rem;
+}
+
+.main .about-img img{
+    width: 20rem;
+}
+
+
+.numbs{
+    width: 50rem;
+   
+}
+
+/*shop*/
+.shop{
+    width: 48rem;
+    height: 40rem;
+}
+.shop .one{
+    height: 35rem;
+}
+.shop .one img{
+    width: 15rem;
+    height: 30rem;
+}
+
+.shop .two{
+    margin-left: 6rem;
+}
+
+/*making*/
+.making{
+    width: 50rem;
+}
+
+/*products*/
+.products{
+    width: 49rem;
+}
+/*write*/
+.write{
+    width: 50rem;
+}
+.write .up{
+    width: 20rem;
+}
+
+.write .up h2{
+    font-size: 1.7rem;
+} 
+
+.write .up p{
+    width: 25rem;
+}
+
+.write .balls{
+    left: 0rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ball{
+    left: 10rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ups img{
+    width: 25rem;
+}
+
+/*blogs*/
+.blogs{
+    width: 50rem;
+    flex-direction: column;
+}
+
+.blogs img{
+    width: 39rem;
+}
+
+/*footer*/
+footer{
+    width: 50rem;
+}
+
+footer .f4 .f4-one img{
+    width: 4rem;
+}
+footer .f4 .f4-two img{
+    width: 4rem;
+}
+    }
+
+    @media screen and (max-width:1024px){
+      body{
+        width: 100%;
+        height: 100vh;
+      }
+          /*header*/
+          header{
+            width: 62.9rem;
+        }
+
+        header .ham{
+            display: block; 
+            margin-left: 29rem;
+            font-size: 2rem;
+        }
+
+        header nav ul{
+            display: none;
+        }
+
+                /*main*/
+.main{
+    width: 62rem;
+    height: 40rem;
+
+}
+
+.main .about{
+    width: 26rem;
+    height: 30rem;
+  
+}
+
+.main .about h2{
+    font-size: 1.9rem;
+} 
+
+.main .about-img{
+    width: 25rem;
+}
+
+.main .about-img img{
+    width: 20rem;
+}
+
+
+.numbs{
+    width: 62.99rem;
+   
+}
+
+/*shop*/
+.shop{
+    width: 55rem;
+    height: 40rem;
+}
+.shop .one{
+    height: 35rem;
+}
+.shop .one img{
+    width: 15rem;
+    height: 30rem;
+}
+
+.shop .two{
+    margin-left: 6rem;
+}
+
+/*making*/
+.making{
+    width: 62.99rem;
+}
+
+/*products*/
+.products{
+    width: 60rem;
+}
+
+/*write*/
+.write{
+    width: 62.9rem;
+}
+
+.write .up{
+    width: 30rem;
+}
+
+.write .up h2{
+    font-size: 1.7rem;
+} 
+
+.write .up p{
+    width: 30rem;
+}
+
+.write .balls{
+    left: 0rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ball{
+    left: 10rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ups img{
+    width: 25rem;
+}
+
+/*blogs*/
+.blogs{
+    width: 50rem;
+    flex-direction: column;
+}
+
+.blogs img{
+    width: 49rem;
+}
+/*footer*/
+footer{
+    width: 50rem;
+}
+
+footer .f4 .f4-one img{
+    width: 4rem;
+}
+footer .f4 .f4-two img{
+    width: 4rem;
+}
+
+    }
+
+    @media screen and (min-width:1600px) {
+        /* body{
+            outline: 2px solid red;
+        } */
+
+        header{
+            width: 100rem;
+            outline: 2px solid gold;
+        }
+        .main{
+            width: 90rem;
+        }
+        .numbs{
+            width: 100rem;
+        }
+        /*shop*/
+.shop{
+    width: 90rem;
+    height: 40rem;
+}
+.shop .one{
+    height: 45rem;
+}
+.shop .one img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.shop .two{
+    margin-left: 6rem;
+}
+
+/*making*/
+.making{
+    width: 100rem;
+}
+/*products*/
+.products{
+width: 100rem;
+}
+
+/*write*/
+.write{
+    width: 100rem;
+}
+.write .up{
+    width: 45rem;
+}
+
+.write .up h2{
+    font-size: 2rem;
+} 
+
+.write .up p{
+    width: 30rem;
+}
+
+.write .balls{
+    left: 0rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ball{
+    left: 10rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.write .ups img{
+    width: 30rem;
+}
+
+/*blogs*/
+ .blogs{
+    width: 100rem;
+    
+}
+
+.blogs img{
+    width: 25rem;
+} 
+
+/*footer*/
+footer{
+    width: 100rem;
+}
+
+    }
